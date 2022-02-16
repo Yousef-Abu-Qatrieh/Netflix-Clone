@@ -10,7 +10,7 @@ function Modalo({cardInfo, show, handleClose}) {
                 </Modal.Header>
                 <Modal.Body className="body">
                     <h3>{cardInfo.title}</h3>
-                    <img alt="" src={cardInfo.image} />
+                    <img alt="" src={`https://image.tmdb.org/t/p/w500/${cardInfo.poster_path}`} />
                     <div>
                         <label htmlFor="op">Write Your Opinion</label>
                         <input placeholder="Write Your Opinion" type="text" id="op" />
