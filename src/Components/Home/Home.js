@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useState,useEffect } from 'react';
-// import './Home.css';
+
 import MovieList from '../MovieList/MovieList';
 function Home() {
     const [data, setData] = useState([]);
