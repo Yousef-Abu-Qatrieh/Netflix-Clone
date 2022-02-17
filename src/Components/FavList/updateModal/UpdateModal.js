@@ -17,7 +17,7 @@ function UpdateModal( {show,handleClose,mov,getFavMovies,
 
         let updated = {title:titleInput,  ReleaseDate:mov.release_date, overview:mov.overview, image:imageInput, comment:commentInput}
         
-      await axios.put(`${process.env.REACT_APP_BASE_URL}/UPDATE/${id}`,updated)
+      await axios.put(`https://moviesrepo.herokuapp.com/UPDATE/${id}`,updated)
                   .then(()=>{
                     getFavMovies();
                   }).catch(err=>{
